@@ -1,8 +1,8 @@
 //  THIS PAGE IS LIKE THE CONTROL PANEL FOR THE APP
 
 // require these files links the files in the programs
-var Letters = require("./Letters");
-var Words = require("./words.js");
+var letter = require("./letter");
+var word = require("./word.js");
 
 //Activates the Letters constructor
-var StartGame = new Letters();
+var RunGame = new letters();
