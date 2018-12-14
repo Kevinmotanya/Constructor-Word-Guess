@@ -3,7 +3,7 @@
 // character or a blank placeholder(such as an underscore), depending on whether or not the user has guessed
 // the letter.That means the constructor should define:
 
-var Letter = function (guess) {
+var letter = function (guess) {
     this.letterChosen = guess;
     console.log("line 9 letter entered into function = " + this.letterChosen);
   // A string value to store the underlying character for the letter.
@@ -31,7 +31,7 @@ var Letter = function (guess) {
         this.wasThisLetterAlreadyGuessed = false;
         this.placeholderForLetter(this.letterChosen);
     } else {
-        console.log("you guessed INCORRECTLY")
+        console.log("INCORRECT guess")
         this.wasThisLetterAlreadyGuessed = true;
         this.placeholderForLetter(guess);
       }
@@ -41,4 +41,4 @@ var Letter = function (guess) {
 
 }
 
-var guess = new Letter("y"); 
+var guess = new letter("y"); 
